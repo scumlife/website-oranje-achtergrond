@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-sep-2014, 17:03:29
+    Author     : Jim
+*/
+.mainnav a:link {
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+body {
+    background-color: #F5874D;
+}
+
+li {
+    border-top: 1px solid;
+}
+
+ul {
+    list-style: none;
+}
+
+.top10lijst {
+    text-decoration: none;
+}
+
+.mainnav{
+    text-align: left;    
+    border: solid 1px;
+    padding: 2px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0 150px 0 150px;
+    height: 30px;
+}
+
+.overig{
+    float: right;
+    margin-right: 20px;
+    margin-right: 150px;
+}
+
+.mainnavbar{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#logo{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+h1{
+    font-family: Impact, Charcoal, sans-serif;
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px;
+    
+}
+
+h2{
+    margin-bottom: 0px;    
+    padding-left: 0px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+
+.top10{
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-right: 180px;
+}
+
+.releases {
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 500px;
+    clear: right;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+#upcoming{
+    float: right;
+}
+
+
+h4{
+    font-family: "Arial Black", Gadget, sans-serif; 
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
