@@ -53,7 +53,9 @@ ul {
 
 #logo{
     margin-top: 15px;
-    margin-left: 150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
     font-family: Impact, Charcoal, sans-serif;
@@ -73,9 +75,12 @@ h2{
 .top10{
     position: relative;
     float: right;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 400px;
     margin-right: 180px;
+	border: 2px solid white;
+    border-radius: 25px;
+	clear: right;
 }
 
 .releases {
@@ -83,9 +88,11 @@ h2{
     float: right;
     width: 250px;
     height: 500px;
-    clear: right;
-    margin-top: 100px;
-    margin-right: 150px;
+    margin-top: 4%;
+    margin-right: 4%;
+	border: 2px solid white;
+    border-radius: 25px;
+	clear: right;
 }
 
 #upcoming{
