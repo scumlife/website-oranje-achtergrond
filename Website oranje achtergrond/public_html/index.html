@@ -6,20 +6,63 @@
         <link href="style.css" rel="stylesheet" type"text/css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="jquery.slides.min.js"></script>
+        
+<!-- slideshow test */ ===============================================-->
+        <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+  </style>
+  
     </head>
     <body>
-        <nav class="overig">
-            <a href="chat.html">Chat </a>| <a href="overons.html">Over ons </a>| <a href="Contact.html">Contact</a><br>
-        </nav>
+<!-- =====================overige informatie========================== -->
+        <div class="overig">
+            <a href="chat.html">Chat </a>| 
+            <a href="overons.html">Over ons </a>|
+             <a href="Contact.html">Contact</a><br>
+        </div>
             <div class="header">
                 <a href="index.html">
                    <img id="logo" src="Logo.png">
                 </a>
-                <h1>Oerhollands.</h1>
+ <!-- <h1>Oerhollands.</h1> in time out gezet, was vervelend============ -->
             </div>
-            <nav class="mainnav">
-                <a class="mainnavbar" href="Films.html">Films</a> | <a class="mainnavbar" href="prijzen.html">Prijzen</a> | <a class="mainnavbar" href="catering.html">Catering</a> | <a class="mainnavbar" href="beeldengeluid.html">Beeld & Geluid</a>
-            </nav>
+<!-- =====================test menu, moeten plannen hoeveel knoppen etc     https://www.youtube.com/watch?v=TmQm-p3wCSU ======================= -->
+          <div class="menu">
+                <ul id="navmenu">  
+	<li><a href="#">test</a>
+		<ul class="sub1">
+			<li><a href="#">test</a></li>
+<!-- hier kan je meer links plaatsen ======================================-->
+			<li><a href="#">test</a></li>
+<!-- hier kan je meer links plaatsen========================================= -->
+		</ul>
+	</li>  
+	<li><a href="#">test</a></li>
+	<li><a href="#">test</a>
+		<ul class="sub1">
+			<li><a href="#">test</a></li>
+			<li><a href="#">test</a></li>
+			<li><a href="#">test</a>
+				<ul class="sub2">
+					<li><a href="#">t</a></li>
+					<li><a href="#">t</a></li>
+					<li><a href="#">test</a></li>
+<!-- en meer============================================== -->
+				</ul>
+			</li>
+           
+		</ul>
+	</li>
+	<li><a href="#">test</a></li>
+<!-- nieuwe knop evt ======================================-->
+</ul>
+</nav></div>
+<!-- top 10 div =============================================-->
         <div class="top10">
             <ul>
                 <h2>Top 10.</h2>
@@ -36,13 +79,88 @@
                 <li> </li>
             </ul>
         </div>
+<!-- releases div================================================= -->
         <div class="releases">
-            <a href="http://www.imdb.com" id="upcoming">
-                <img id="upcoming2" src="upcoming.png">
-            </a>
+        	<a href="http://www.imdb.com" id="upcoming">
+            
+       		<img src="walt.jpg" id="upcoming2" align="middle"></a>
         </div>
-        
-        
+<!-- midde================================================= -->
+
+									<div class="center">
+                                                    
+<!-- slide show test ==============================================-->
+                           <div class="slide">
+                         <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
+
+  <div id="slides">
+    <img src="example-slide-1.jpg">
+    <img src="example-slide-2.jpg">
+    <img src="example-slide-3.jpg">
+    <img src="example-slide-4.jpg">
+    <img src="example-slide-5.jpg">
+  </div>
+
+                           </div>
+                           
+                           
+<!-- slide show test einde============================================== -->
+                           
+                           
+	<div class="bericht"> 
+			<div class="ster"><img src="ster.jpg"/><div class="voorbeeld"><img id="resize" src="walt.jpg"/></div>
+												<div class="info">     
+ <!-- IMDB PLUGIN===========================================================================================================-->
+				<span class="imdbRatingPlugin" data-user="ur55286927" data-title="tt0111161" data-style="p1"><a href="http://www.imdb.com/title/tt0111161/?ref_=plg_rt_1">
+				<img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" 
+				alt=" The Shawshank Redemption(1994) on IMDb" />
+</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+<!-- EINDE IMDB PLUGIN===================================================================================================-->
+             
+                
+            							</div>
+             <b>If I Stay</b><br>
+			Vanaf donderdag 18 september is If I Stay (2014) te zien in de Nederlandse bioscopen. De film, met Chloë Grace Moretz,
+			Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf donderdag 18 september is If I Stay (2014) te zien in
+			de Nederlandse bioscopen. De film, met Chloë Grace Moretz, Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf 
+			donderdag 18 september is If I Stay (2014)
+
+	</div></div>
+    
+   					 <div class="lijntje"></div> <!--oranje lijn -->
+	<div class="bericht"> 
+						<div class="ster"><img src="ster.jpg"/><div class="voorbeeld"><img id="resize" src="walt.jpg"/></div>
+						<div class="info">
+<!-- IMDB PLUGIN===========================================================================================================-->
+		<span class="imdbRatingPlugin" data-user="ur55286927" data-title="tt1872181" data-style="p3"><a href="http://www.imdb.com/title/tt1872181/?ref_=plg_rt_1">
+		<img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" 
+		alt=" The Amazing Spider-Man 2(2014) on IMDb" />
+</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+<!-- EINDE IMDB PLUGIN===================================================================================================-->test<br>
+						Score : 4.2<br>
+						
+						Met : Will Smith <br>
+						Door : Will Smith<br>
+            								</div>
+                        <b>If I Stay</b><br>
+			Vanaf donderdag 18 september is If I Stay (2014) te zien in de Nederlandse bioscopen. De film, met Chloë Grace Moretz,
+			Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf donderdag 18 september is If I Stay (2014) te zien in
+			de Nederlandse bioscopen. De film, met Chloë Grace Moretz, Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf 
+			donderdag 18 september is If I Stay (2014)
+	</div>
+
+											</div><!--eindecentre div-->
+ 
+
+      	
+	   
         
     </body>
 </html>
