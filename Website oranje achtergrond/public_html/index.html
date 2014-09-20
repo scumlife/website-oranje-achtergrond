@@ -16,7 +16,49 @@
       display:none;
     }
   </style>
-  
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+  </style>
+  <!-- SlidesJS einde=========================================================: -->
     </head>
     <body>
 <!-- =====================overige informatie========================== -->
@@ -27,12 +69,47 @@
         </div>
             <div class="header">
                 <a href="index.html">
-                   <img id="logo" src="Logo.png">
+              
                 </a>
  <!-- <h1>Oerhollands.</h1> in time out gezet, was vervelend============ -->
             </div>
+
+<!-- top 10 div =============================================-->
+        <div class="top10">
+            <ul>
+                <h2>Top 10.</h2>
+                <li><a class="top10lijst" href="#">asd</a></li>
+                <li><a class="top10lijst" href="#">asdasd</a></li>
+                <li><a class="top10lijst" href="#">asdasd</a></li>
+                <li><a class="top10lijst" href="#">kurwa</a></li>
+                <li><a class="top10lijst" href="#">barry pooter</a></li>
+                <li><a class="top10lijst" href="#">asd</a></li>
+                <li><a class="top10lijst" href="#">asdasd</a></li>
+                <li><a class="top10lijst" href="#">asdasd</a></li>
+                <li><a class="top10lijst" href="#">kurwa</a></li>
+                <li><a class="top10lijst" id="barrypooter" href="#">barry pooter</a></li>
+                <li> </li>
+            </ul>
+        </div>
+<!-- releases div================================================= -->
+        <div class="releases">
+        	<a href="http://www.imdb.com" id="upcoming">
+            
+       		<img src="walt.jpg" id="upcoming2" align="middle"></a>
+        </div>
+<!-- midde================================================= -->
+
+									<div class="center"><!-- start centre div-->
+							<div class="logomenu">		
+                                                     
+													
+			</div>
+			
 <!-- =====================test menu, moeten plannen hoeveel knoppen etc     https://www.youtube.com/watch?v=TmQm-p3wCSU ======================= -->
-          <div class="menu">
+			<img id="logo" src="Logo.png">   
+			
+			 
+								<div class="menu">
                 <ul id="navmenu">  
 	<li><a href="#">test</a>
 		<ul class="sub1">
@@ -61,35 +138,14 @@
 	<li><a href="#">test</a></li>
 <!-- nieuwe knop evt ======================================-->
 </ul>
-</nav></div>
-<!-- top 10 div =============================================-->
-        <div class="top10">
-            <ul>
-                <h2>Top 10.</h2>
-                <li><a class="top10lijst" href="#">asd</a></li>
-                <li><a class="top10lijst" href="#">asdasd</a></li>
-                <li><a class="top10lijst" href="#">asdasd</a></li>
-                <li><a class="top10lijst" href="#">kurwa</a></li>
-                <li><a class="top10lijst" href="#">barry pooter</a></li>
-                <li><a class="top10lijst" href="#">asd</a></li>
-                <li><a class="top10lijst" href="#">asdasd</a></li>
-                <li><a class="top10lijst" href="#">asdasd</a></li>
-                <li><a class="top10lijst" href="#">kurwa</a></li>
-                <li><a class="top10lijst" id="barrypooter" href="#">barry pooter</a></li>
-                <li> </li>
-            </ul>
-        </div>
-<!-- releases div================================================= -->
-        <div class="releases">
-        	<a href="http://www.imdb.com" id="upcoming">
-            
-       		<img src="walt.jpg" id="upcoming2" align="middle"></a>
-        </div>
-<!-- midde================================================= -->
+</nav>			
+</div> <!-- einde menu -->
 
-									<div class="center">
-                                                    
+
 <!-- slide show test ==============================================-->
+
+   <!--oranje lijn --> <div class="lijntje"></div> <!--oranje lijn -->
+<br>
                            <div class="slide">
                          <script>
     $(function(){
@@ -134,7 +190,8 @@
 
 	</div></div>
     
-   					 <div class="lijntje"></div> <!--oranje lijn -->
+   <!--oranje lijn --> <div class="lijntje"></div> <!--oranje lijn -->
+   
 	<div class="bericht"> 
 						<div class="ster"><img src="ster.jpg"/><div class="voorbeeld"><img id="resize" src="walt.jpg"/></div>
 						<div class="info">
@@ -143,7 +200,8 @@
 		<img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" 
 		alt=" The Amazing Spider-Man 2(2014) on IMDb" />
 </a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
-<!-- EINDE IMDB PLUGIN===================================================================================================-->test<br>
+<!-- EINDE IMDB PLUGIN===================================================================================================-->
+						test<br>
 						Score : 4.2<br>
 						
 						Met : Will Smith <br>
@@ -155,8 +213,30 @@
 			de Nederlandse bioscopen. De film, met Chloë Grace Moretz, Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf 
 			donderdag 18 september is If I Stay (2014)
 	</div>
-
-											</div><!--eindecentre div-->
+  <!--oranje lijn --> <div class="lijntje"></div> <!--oranje lijn -->
+  
+  	<div class="bericht"> 
+						<div class="ster"><img src="ster.jpg"/><div class="voorbeeld"><img id="resize" src="walt.jpg"/></div>
+						<div class="info">
+<!-- IMDB PLUGIN===========================================================================================================-->
+		<span class="imdbRatingPlugin" data-user="ur55286927" data-title="tt1872181" data-style="p3"><a href="http://www.imdb.com/title/tt1872181/?ref_=plg_rt_1">
+		<img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_37x18.png" 
+		alt=" The Amazing Spider-Man 2(2014) on IMDb" />
+</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+<!-- EINDE IMDB PLUGIN===================================================================================================-->
+						test<br>
+						Score : 4.2<br>
+						
+						Met : Will Smith <br>
+						Door : Will Smith<br>
+            								</div>
+                        <b>If I Stay</b><br>
+			Vanaf donderdag 18 september is If I Stay (2014) te zien in de Nederlandse bioscopen. De film, met Chloë Grace Moretz,
+			Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf donderdag 18 september is If I Stay (2014) te zien in
+			de Nederlandse bioscopen. De film, met Chloë Grace Moretz, Mireille Enos en Liana Liberato, is geregisseerd door R.J. Cutler.Vanaf 
+			donderdag 18 september is If I Stay (2014)
+	</div>
+											</div><!--eindecentre div--></div>
  
 
       	

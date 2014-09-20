@@ -17,10 +17,10 @@ body {
     background-color: #F5874D;
 }
 
-li {
-    border-top: 1px solid;
+/*li { uitgezet vanwege dat hij alles een border top geeft nu, menu problemen
+    border-top: 0px solid;
 }
-
+================================================*/
 ul {
     list-style: none;
 }
@@ -28,7 +28,7 @@ ul {
 .top10lijst {
     text-decoration: none;
 }
-
+/*
 .mainnav{
     text-align: left;    
     border: solid 1px;
@@ -39,24 +39,34 @@ ul {
     margin: 0 150px 0 150px;
     height: 30px;
 }
+*/
 
 .overig{
     float: right;
-    margin-right: 20px;
-    margin-right: 150px;
-}
+	text-decoration: none;
+    margin-right: 215px;
+    text-decoration: none;
 
+
+		
+}
+/*
 .mainnavbar{
     margin-right: 20px;
     margin-left: 20px;
+	height:auto;
 }
-
+*/
 #logo{
     margin-top: 15px;
 	display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 24%;
 }
+
+
+}
+/* Kan beter in HTML in 1 regel dan 5 in css */
 h1{
     font-family: Impact, Charcoal, sans-serif;
     float: right;
@@ -65,22 +75,28 @@ h1{
     
 }
 
-h2{
+/*h2{
     margin-bottom: 0px;    
     padding-left: 0px;
     font-family: Impact, Charcoal, sans-serif;
 }
-
+*/
 
 .top10{
     position: relative;
     float: right;
     width: 250px;
-    height: 400px;
+    height: 300px;
     margin-right: 180px;
+	margin-top: 25px;
 	border: 2px solid white;
     border-radius: 25px;
 	clear: right;
+	text-align:left;
+	padding-left:4;
+	/* gewoon 4, geen px of % werkt... so ok */
+	display:block;
+			overflow:hidden;
 }
 
 .releases {
@@ -88,20 +104,260 @@ h2{
     float: right;
     width: 250px;
     height: 500px;
-    margin-top: 4%;
-    margin-right: 4%;
+    margin-right: 180px;
+	margin-top: 20px;
 	border: 2px solid white;
     border-radius: 25px;
 	clear: right;
-}
+	overflow:hidden;
 
+}
+.lijntje {
+   background-color: #F5874D;
+   width:550px;
+   height:5px;
+   	border: 2px solid #F5874D;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+	
+	}
+	
 #upcoming{
     float: right;
+		display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+	padding-right:2;
+	@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+#upcoming widget {
+display: none
+				}
+}
+}
+/*
+#upcoming2{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+.center{
+    background-color: white;
+	  position: relative;
+
+    width: 700px;
+	height: 1800px;
+	border: 2px solid;
+    border-radius: 25px;
+	margin-left:auto;
+    margin-right:35%;
+	padding: 10px;
+
+
+	position:relative;
+	float: center-right;
+	clear:center-right;
+	 display:block !important;
+
 }
 
+.slides { 
+    border-radius: 25px;
+}
+
+.slide{	
+	  background-color:white;
+	  text-align:center;
+	  margin-left:10%;
+	  margin-right:10%;
+	  margin-top:25%;
+	  border-radius: 25px;
+} 
+.ster{
+	  display: inline-block;
+	  background-color:white;
+	  text-align:left;
+	  float:top;
+}
+
+.voorbeeld{
+
+	  background-color:white;
+	  float:right;
+  	  margin-right: 1%;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  display: inline-block;
+	  clear: right;
+	}  
+.info{
+
+	  background-color:white;
+	  float:right;
+  	  margin-right: 1%;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  width: 120px;
+	  height: 217px;
+	  border: solid black;
+	padding-left: 1px;
+	padding-right:40px;
+	padding-bottom:1px;
+		padding-top:2px;
+		}
+
+.logomenu {	
+	  background-color:green;
+	  float:center;
+  	  margin-right: 1%;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+
+	  border: solid black;
+	padding-left: 1px;
+	padding-right:1px;
+	padding-bottom:1px;
+		padding-top:2px; }
+		
+		.menu {	
+		
+	  background-color:white;
+	  float:center;
+  	  margin-right: 1%;
+	  margin-top: 11px;
+	  margin-bottom: 10px;
+	  height:250px;
+	  width: 500px
+	float: center-right;
+	clear:center-right;
+	  border: solid black;
+	  
+
+
+}
+
+#resize{
+    width:150px; /* <<<<< kan % gebruiken - je voert hier de breedte*/
+    height: auto; /* in, en hij paste de hoogte automatich in */
+}
+.bericht{
+	  display: inline-block;
+	  background-color:white;
+	  text-align:center;
+	  margin-left:1px;
+	  }
+
+
+}
 
 h4{
     font-family: "Arial Black", Gadget, sans-serif; 
     margin-bottom: 5px;
     margin-top: 10px;
 }
+/* ------------------hide shit op mobile test-----doet niets QQ-----------------------------
+*/	
+
+//medium+ screen sizes
+@media (min-width:992px) {
+    .top10 {
+        display:block !important;
+    }
+	.releases {
+        display:block !important;
+    }
+}
+ 
+//small screen sizes
+@media (max-width: 991px) {
+    .xxx {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
+/* ----------------------------------------------------
+*/	
+		
+	/* rules for navigation menu */
+	/* ========================================== */
+	
+
+	
+	
+		ul#navmenu, ul.sub1, ul.sub2 {
+		list-style-type: none;
+		font-size: 9pt;
+		
+		}
+		
+	ul#navmenu li {       /* hier kan je menu veranderen*/
+		width: 125px;
+		text-align: center;
+		position: relative;
+	margin-left: 1px;
+		margin-right: 0px;
+		margin-top: 0%;
+		z-index: 11;
+		float: center;
+
+		}
+		
+	ul#navmenu a {     /* hier kan je knoppen van het menu veranderen */
+		text-decoration: none;
+		display: block;
+		width: 125px;
+		height: 25px;
+		line-height: 25px;
+		background-color: #FFF;
+		border: 1px solid #CCC;
+		border-radius: 5px;
+		z-index: 11;
+		}
+		
+	ul#navmenu .sub1 li {
+		}
+		
+	ul#navmenu .sub1 a {
+		margin-top: 5px;
+		}
+		
+	ul#navmenu .sub2 a {
+		margin-left: 3px;
+		}
+		
+	ul#navmenu li:hover > a {
+		background-color: #CFC;
+		}
+		
+	ul#navmenu li:hover a:hover {
+		background-color: #FF0;
+		}
+		
+	ul#navmenu ul.sub1 {
+		display: none;
+		position: absolute;
+		top: 26px;
+		left: 0px;
+		}
+		
+	ul#navmenu ul.sub2 {
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 126px;
+		}
+		
+	ul#navmenu li:hover .sub1 {
+		display: block;
+		}
+		
+	ul#navmenu .sub1 li:hover .sub2 {
+		display: block;
+		}
+		
